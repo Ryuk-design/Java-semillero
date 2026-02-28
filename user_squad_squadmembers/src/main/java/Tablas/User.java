@@ -1,7 +1,14 @@
-package com.byteprogramming.user_squad_squadmembers.entity;
+package Tablas;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
@@ -45,8 +52,6 @@ public class User {
     @Min(1) @Max(20)
     private Integer currentSemester;
 
-    @Column(name = "current_semester")
-    private Integer currentSemester;
 
     @Column(unique = true, name = "profile_photo")
     private String profilePhoto;
