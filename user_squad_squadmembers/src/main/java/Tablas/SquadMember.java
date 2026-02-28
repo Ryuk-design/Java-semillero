@@ -1,9 +1,11 @@
-package com.byteprogramming.squadmembers.entity;
+package Tablas;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Data
@@ -11,11 +13,11 @@ import jakarta.validation.constraints.NotBlank;
 @NoArgsConstructor
 public class SquadMember{
 
-@NotBlank(nullable = false)
+@NotBlank
 @Column (name = "Id", nullable = false)
 private int id;
 
-@NotBlank(nullable = false)
+@NotBlank
 private String squad_role;
 
 @Column (name = "Id", nullable = false)
