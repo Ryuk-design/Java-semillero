@@ -8,7 +8,5 @@ public class user{
     private int level;
     private String role;
     private int current_semester;
-    private String profile_photo;
-
-    
+    private String profile_photo;    
     }
