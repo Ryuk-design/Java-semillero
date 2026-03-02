@@ -1,4 +1,4 @@
-package tables;
+package com.byteprogramming.user_squad_squadmembers.tables;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

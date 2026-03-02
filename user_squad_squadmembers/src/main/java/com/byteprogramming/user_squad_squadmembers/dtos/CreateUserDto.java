@@ -1,4 +1,4 @@
-package dtos;
+package com.byteprogramming.user_squad_squadmembers.dtos;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
