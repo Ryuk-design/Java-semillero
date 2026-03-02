@@ -1,4 +1,4 @@
-package Tablas;
+package tables;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

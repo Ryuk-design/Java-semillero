@@ -1,4 +1,4 @@
-package Tablas;
+package tables;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "user")
 @Data
 @NoArgsConstructor
-public class User {
+public class User{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
