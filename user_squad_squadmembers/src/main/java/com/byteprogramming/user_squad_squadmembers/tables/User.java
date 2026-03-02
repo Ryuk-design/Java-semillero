@@ -1,5 +1,7 @@
 package com.byteprogramming.user_squad_squadmembers.tables;
 
+import org.hibernate.validator.constraints.URL;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,6 +13,7 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -43,6 +46,7 @@ public class User{
     @Column(unique = true, name = "linkedin_user")
     private String linkedinUser;
 
+    @Size (max = 100)
     @Column(unique = true, name = "github_user")
     private String githubUser;
 
@@ -52,7 +56,7 @@ public class User{
     @Min(1) @Max(20)
     private Integer currentSemester;
 
-
+    @URL
     @Column(unique = true, name = "profile_photo")
     private String profilePhoto;
 
