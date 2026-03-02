@@ -43,10 +43,11 @@ public class User{
     message = "La contraseña debe tener mínimo 8 caracteres, una mayúscula, un número y un carácter especial")
     private String password;
 
+    @Size (max = 50)
     @Column(unique = true, name = "linkedin_user")
     private String linkedinUser;
 
-    @Size (max = 100)
+    @Size (max = 50)
     @Column(unique = true, name = "github_user")
     private String githubUser;
 
@@ -62,6 +63,8 @@ public class User{
 
     @Column(nullable = false)
     private Boolean status;
+
+    private String role;
 }
 
 
